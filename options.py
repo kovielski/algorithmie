@@ -12,8 +12,8 @@ def menu_affichage():
     return option 
 
 def voir_nom():
-    with open('productos.csv', 'r') as file 
-    reader = csv.DictReader(file)
+    with open('productos.csv', 'r') as file :
+        reader = csv.DictReader(file)
     print("Liste des produits : ")
     for row in reader :
         print(row['nom_prod'])
@@ -46,7 +46,7 @@ def supprimer_produit(produits, supprimer_colonne):
         except FileNotFoundError:
             print(f"Erreur : Le fichier '{produits}' n'existe pas")
         except KeyError:
-            print(f"Erreur : La colonnes 'Nom_Produit' n'existe pas dans ce fichier")
+            print(f"Erreur : La colonne '{Nom_Produit}' n'existe pas dans ce fichier")
 
 
 def binary_search(produits) : 

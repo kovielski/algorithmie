@@ -18,5 +18,5 @@ with open('productos.csv', 'w', newline='') as file :
     writer.writerows(donnees)
 
 with open('productos.csv', 'r') as file : 
-  tout = file.read()
-  print(tout)
+    tout = file.read()
+    print(tout)

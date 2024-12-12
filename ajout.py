@@ -9,7 +9,6 @@ def ajout(productos):
     with open('productos.csv', 'r') as file :
       tout = file.read()
       print(tout)
+      print("Nouveau produit ajouté avec succès !")
 
 ajout('productos.csv')
-
-        
